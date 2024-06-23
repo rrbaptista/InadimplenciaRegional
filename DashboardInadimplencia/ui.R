@@ -10,13 +10,13 @@ lateral <- dashboardSidebar(sidebarMenu(menuItem("Introdução", tabName = "INTR
                                         selectInput("uf_selecionada", label = "Selecione a UF", choices = lista_uf),
                                         menuItem("Série Histórica", tabName = "SERIE_HISTORICA"),
                                         menuItem("Sazonalidade", 
-                                                 selectInput("tipo_pessoa_sazonalidade", label = "Selecione o tipo de pessoa", choices = c("PF", "PJ")),
+                                                 selectInput("tipo_pessoa_sazonalidade", label = "Selecione o tipo de pessoa", choices = c("PF" = "P", "PJ" = "C")),
                                                  menuSubItem("Visualizar Sazonalidade", tabName = "SAZONALIDADE")),
                                         menuItem("Projeção", 
                                                  noUiSliderInput("meses_projecao", 
                                                               label = "Selecione a quantidade de meses futuros", 
                                                               value = 2, min = 2, max = 60, step = 1, format = wNumbFormat(decimals = 0)),
-                                                 selectInput("tipo_pessoa_projecao", label = "Selecione o tipo de pessoa", choices = c("PF", "PJ")),
+                                                 selectInput("tipo_pessoa_projecao", label = "Selecione o tipo de pessoa", choices = c("PF" = 'P', "PJ" = 'C')),
                                                  menuSubItem("Visualizar projeção", tabName = "PROJECAO"))), 
                             width = 250)
 

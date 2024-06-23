@@ -25,7 +25,7 @@ function(input, output, session) {
     resultado <- cbind(historico = modelo()[["x"]], projecao)
     
     dygraph(resultado, 
-            main = paste0("Série Histórica e Projeção para ", input$meses_projecao, " meses - " ,input$uf_selecionada, " - ", input$tipo_pessoa_projecao), 
+            main = paste0("Série Histórica e Projeção para ", input$meses_projecao, " meses - " , input$uf_selecionada, " - ", ifelse(input$tipo_pessoa_projecao == 'P', 'PF', 'PJ')), 
             xlab = "Linha Temporal", ylab = "Taxa de inadimplência em %") %>%
       dySeries("historico", label = "Série Histórica") %>%
       dySeries(c("projecao"), label = "Projeção") %>%
