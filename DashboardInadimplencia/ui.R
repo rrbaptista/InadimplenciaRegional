@@ -29,7 +29,7 @@ corpo <- dashboardBody(
               tags$h3("Esse dashboard elenca alguns estudos feitos com dados de inadimplência de produtos de crédito agrupados por UF e tipo de pessoa, usando como fonte um dataset obtido no Sistema Gerenciador de Séries Temporais do Banco Central do Brasil"),
               tags$h3("A taxa de inadimplência exibida nos estudos segue o conceito dado pelo Banco Central do Brasil:"),
               tags$blockquote("Taxa de inadimplência das operações de empréstimo, financiamento, adiantamento e arrendamento mercantil, concedidas pelas instituições integrantes do Sistema Financeiro Nacional (SFN), segregada em pessoas físicas e jurídicas, e por unidade da federação; medida pela razão entre o saldo dos contratos em que há pelo menos uma prestação, integral ou parcial, com atraso superior a noventa dias, e o saldo total das operações."),
-              tags$h3("Você pode acessar o dataset completo no meu perfil no Kaggle, onde hospedo datasets livres para uso em estudos, ", tags$a(href = "https://www.kaggle.com/datasets/ex0ticone/credit-default-rates-of-brazilian-entities", "clicando aqui")),
+              tags$h3("Você pode acessar o dataset completo no meu perfil no Kaggle, onde hospedo datasets livres para uso em estudos, ", tags$a(href = "https://www.kaggle.com/datasets/ex0ticone/credit-default-rates-of-brazilian-entities", target = "_blank", "clicando aqui")),
               tags$h3("Navegue pelo menu lateral para acessar os estudos e mudar os parâmetros desejados. O dashboard atualizará automaticamente o painel."),
               tags$h2("Obrigado!"))
             ),
